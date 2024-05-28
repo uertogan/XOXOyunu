@@ -63,7 +63,7 @@ namespace XOXOyunu
             lblOyuncuSirasi.Text = "Oyuncu Sýrasý: ";
 
             lblOyuncu1.Text = "1. Oyuncu:";
-            lblOyuncu1.BackColor=Control.DefaultBackColor;
+            lblOyuncu1.BackColor = Control.DefaultBackColor;
             lblOyuncu2.Text = "2. Oyuncu:";
             lblOyuncu2.BackColor = Control.DefaultBackColor;
 
@@ -71,14 +71,16 @@ namespace XOXOyunu
             btnXOSec.Enabled = true;
 
             lblKazanan.Text = "Kazanan: ";
-            lblKazanan.BackColor= Control.DefaultBackColor;
+            lblKazanan.BackColor = Control.DefaultBackColor;
         }
         private void KazananOluncaYap()
         {
             if (lblKazanan.Text == "Kazanan: 1. Oyuncu ")
                 lblKazanan.BackColor = Color.Red;
-            else
+            else if (lblKazanan.Text == "Kazanan: 2. Oyuncu ")
                 lblKazanan.BackColor = Color.Blue;
+            else
+                lblKazanan.BackColor = Color.Green;
 
             ButonlariKapat();
             btnYenidenBaslat.Enabled = true;
@@ -198,6 +200,11 @@ namespace XOXOyunu
             else if (btnS1K3.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K1.Text == secilen2)
             {
                 lblKazanan.Text = "Kazanan: 2. Oyuncu ";
+                KazananOluncaYap();
+            }
+            else if (btnS1K1.Enabled == false && btnS2K1.Enabled == false && btnS3K1.Enabled == false &&                   btnS1K2.Enabled == false && btnS2K2.Enabled == false && btnS3K2.Enabled == false &&                   btnS1K3.Enabled == false && btnS2K3.Enabled == false && btnS3K3.Enabled == false)
+            {
+                lblKazanan.Text = "Kazanan: Berabere";
                 KazananOluncaYap();
             }
         }
