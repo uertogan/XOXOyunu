@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblOyuncu1 = new Label();
             lblOyuncu2 = new Label();
             btnS1K1 = new Button();
@@ -44,6 +46,8 @@
             lblOyuncuSirasi = new Label();
             lblKazanan = new Label();
             btnYenidenBaslat = new Button();
+            btnClose = new Button();
+            ımageList1 = new ImageList(components);
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +55,7 @@
             // 
             lblOyuncu1.BorderStyle = BorderStyle.FixedSingle;
             lblOyuncu1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            lblOyuncu1.Location = new Point(356, 57);
+            lblOyuncu1.Location = new Point(355, 81);
             lblOyuncu1.Name = "lblOyuncu1";
             lblOyuncu1.Size = new Size(141, 35);
             lblOyuncu1.TabIndex = 0;
@@ -61,7 +65,7 @@
             // 
             lblOyuncu2.BorderStyle = BorderStyle.FixedSingle;
             lblOyuncu2.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            lblOyuncu2.Location = new Point(356, 104);
+            lblOyuncu2.Location = new Point(355, 128);
             lblOyuncu2.Name = "lblOyuncu2";
             lblOyuncu2.Size = new Size(141, 35);
             lblOyuncu2.TabIndex = 1;
@@ -171,7 +175,7 @@
             // 
             btnXOSec.BackColor = Color.DarkOrange;
             btnXOSec.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            btnXOSec.Location = new Point(519, 57);
+            btnXOSec.Location = new Point(518, 81);
             btnXOSec.Name = "btnXOSec";
             btnXOSec.Size = new Size(141, 82);
             btnXOSec.TabIndex = 12;
@@ -212,11 +216,30 @@
             btnYenidenBaslat.UseVisualStyleBackColor = true;
             btnYenidenBaslat.Click += btnYenidenBaslat_Click;
             // 
+            // btnClose
+            // 
+            btnClose.ImageKey = "icons8-close-24.png";
+            btnClose.ImageList = ımageList1;
+            btnClose.Location = new Point(642, 9);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(41, 35);
+            btnClose.TabIndex = 16;
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
+            // ımageList1
+            // 
+            ımageList1.ColorDepth = ColorDepth.Depth32Bit;
+            ımageList1.ImageStream = (ImageListStreamer)resources.GetObject("ımageList1.ImageStream");
+            ımageList1.TransparentColor = Color.Transparent;
+            ımageList1.Images.SetKeyName(0, "icons8-close-24.png");
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(695, 374);
+            Controls.Add(btnClose);
             Controls.Add(btnYenidenBaslat);
             Controls.Add(lblKazanan);
             Controls.Add(lblOyuncuSirasi);
@@ -224,7 +247,9 @@
             Controls.Add(groupBox1);
             Controls.Add(lblOyuncu2);
             Controls.Add(lblOyuncu1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
@@ -248,5 +273,7 @@
         private Label lblOyuncuSirasi;
         private Label lblKazanan;
         private Button btnYenidenBaslat;
+        private Button btnClose;
+        private ImageList ımageList1;
     }
 }

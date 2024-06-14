@@ -202,7 +202,7 @@ namespace XOXOyunu
                 lblKazanan.Text = "Kazanan: 2. Oyuncu ";
                 KazananOluncaYap();
             }
-            else if (btnS1K1.Enabled == false && btnS2K1.Enabled == false && btnS3K1.Enabled == false &&                   btnS1K2.Enabled == false && btnS2K2.Enabled == false && btnS3K2.Enabled == false &&                   btnS1K3.Enabled == false && btnS2K3.Enabled == false && btnS3K3.Enabled == false)
+            else if (btnS1K1.Enabled == false && btnS2K1.Enabled == false && btnS3K1.Enabled == false && btnS1K2.Enabled == false && btnS2K2.Enabled == false && btnS3K2.Enabled == false && btnS1K3.Enabled == false && btnS2K3.Enabled == false && btnS3K3.Enabled == false)
             {
                 lblKazanan.Text = "Kazanan: Berabere";
                 KazananOluncaYap();
@@ -215,6 +215,11 @@ namespace XOXOyunu
             btnYenidenBaslat.Enabled = false;
             btnXOSec.BackColor = Color.Orange;
             ButonlariKapat();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
