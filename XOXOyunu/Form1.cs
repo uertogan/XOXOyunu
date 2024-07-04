@@ -122,82 +122,26 @@ namespace XOXOyunu
                 lblOyuncuSirasi.Text = OyuncuSirasiListesi[0];
             }
 
-            if (btnS1K1.Text == secilen1 && btnS1K2.Text == secilen1 && btnS1K3.Text == secilen1)
+            if (btnS1K1.Text == secilen1 && btnS1K2.Text == secilen1 && btnS1K3.Text == secilen1 ||
+                btnS2K1.Text == secilen1 && btnS2K2.Text == secilen1 && btnS2K3.Text == secilen1 ||
+                btnS3K1.Text == secilen1 && btnS3K2.Text == secilen1 && btnS3K3.Text == secilen1 ||
+                btnS1K1.Text == secilen1 && btnS2K1.Text == secilen1 && btnS3K1.Text == secilen1 ||
+                btnS1K2.Text == secilen1 && btnS2K2.Text == secilen1 && btnS3K2.Text == secilen1 || 
+                btnS1K3.Text == secilen1 && btnS2K3.Text == secilen1 && btnS3K3.Text == secilen1 ||
+                btnS1K1.Text == secilen1 && btnS2K2.Text == secilen1 && btnS3K3.Text == secilen1 ||
+                btnS1K3.Text == secilen1 && btnS2K2.Text == secilen1 && btnS3K1.Text == secilen1)
             {
                 lblKazanan.Text = "Kazanan: 1. Oyuncu ";
                 KazananOluncaYap();
             }
-            else if (btnS1K1.Text == secilen2 && btnS1K2.Text == secilen2 && btnS1K3.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS2K1.Text == secilen1 && btnS2K2.Text == secilen1 && btnS2K3.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS2K1.Text == secilen2 && btnS2K2.Text == secilen2 && btnS2K3.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS3K1.Text == secilen1 && btnS3K2.Text == secilen1 && btnS3K3.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS3K1.Text == secilen2 && btnS3K2.Text == secilen2 && btnS3K3.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K1.Text == secilen1 && btnS2K1.Text == secilen1 && btnS3K1.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K1.Text == secilen2 && btnS2K1.Text == secilen2 && btnS3K1.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K2.Text == secilen1 && btnS2K2.Text == secilen1 && btnS3K2.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K2.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K2.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K3.Text == secilen1 && btnS2K3.Text == secilen1 && btnS3K3.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K3.Text == secilen2 && btnS2K3.Text == secilen2 && btnS3K3.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K1.Text == secilen1 && btnS2K2.Text == secilen1 && btnS3K3.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K1.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K3.Text == secilen2)
-            {
-                lblKazanan.Text = "Kazanan: 2. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K3.Text == secilen1 && btnS2K2.Text == secilen1 && btnS3K1.Text == secilen1)
-            {
-                lblKazanan.Text = "Kazanan: 1. Oyuncu ";
-                KazananOluncaYap();
-            }
-            else if (btnS1K3.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K1.Text == secilen2)
+            else if (btnS1K1.Text == secilen2 && btnS1K2.Text == secilen2 && btnS1K3.Text == secilen2 ||
+                     btnS2K1.Text == secilen2 && btnS2K2.Text == secilen2 && btnS2K3.Text == secilen2 ||
+                     btnS3K1.Text == secilen2 && btnS3K2.Text == secilen2 && btnS3K3.Text == secilen2 ||
+                     btnS1K1.Text == secilen2 && btnS2K1.Text == secilen2 && btnS3K1.Text == secilen2 ||
+                     btnS1K2.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K2.Text == secilen2 ||
+                     btnS1K3.Text == secilen2 && btnS2K3.Text == secilen2 && btnS3K3.Text == secilen2 ||
+                     btnS1K1.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K3.Text == secilen2 ||
+                     btnS1K3.Text == secilen2 && btnS2K2.Text == secilen2 && btnS3K1.Text == secilen2)
             {
                 lblKazanan.Text = "Kazanan: 2. Oyuncu ";
                 KazananOluncaYap();
